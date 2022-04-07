@@ -1,0 +1,5 @@
+<p *ngIf="canShow ; else nameNotFound">{{number}}</p>
+<ng-template #nameNotFound>
+    <p>O nome não foi encontrado</p>
+</ng-template>
+<app-children-data (handleChange)="onHandleChange()"></app-children-data>
